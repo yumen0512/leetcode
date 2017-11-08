@@ -1,0 +1,25 @@
+build/
+gradle/
+.gradle/
+gradlew*
+.idea/
+*.iml
+local.properties
+# ignore DS_Store files on OSX system
+.DS_Store
+dist/
+*.log
+nrdc.log.*
+
+out
+
+.gradletasknamecache
+.classpath
+.project
+classes/
+comb/app/integration/facade-impl/comb-integration-facade-impl/src/main/webapp/
+common/swagger/src/main/webapp/
+portal/app/web/portal-web-iap/src/main/webapp/
+iap-pc/src/main/webapp/
+iap-h5/src/main/webapp/
+

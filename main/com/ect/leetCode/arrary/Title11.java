@@ -1,4 +1,4 @@
-package java.com.ect.leetCode.list;
+package com.ect.leetCode.arrary;
 
 /**
  * Container With Most Water
