@@ -58,7 +58,7 @@ public class Title24 {
 
         ListNode n = head.next;
 
-        head.next = swapPairs(head.next.next);
+        head.next = swapPairs2(head.next.next);
 
         n.next = head;
 
