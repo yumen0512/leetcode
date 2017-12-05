@@ -41,7 +41,10 @@ public class Title34 {
 
 
     public static int[] searchRange2(int[] nums, int target) {
+
         int[] result = {-1, -1};
+
+        if (nums.length == 0) return result;
 
         // 查找左边界
         int i = 0, j = nums.length - 1;
@@ -75,7 +78,7 @@ public class Title34 {
 
         result[1] = j;
 
-        return nums;
+        return result;
 
     }
 
