@@ -1,4 +1,4 @@
-package com.ect.leetCode.Tree;
+package com.ect.leetCode.tree;
 
 import java.util.ArrayList;
 import java.util.List;

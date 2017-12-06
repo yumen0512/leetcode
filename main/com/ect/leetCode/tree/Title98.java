@@ -1,4 +1,4 @@
-package com.ect.leetCode.Tree;
+package com.ect.leetCode.tree;
 
 /**
  * 校验是否是二叉搜索树

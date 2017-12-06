@@ -1,4 +1,4 @@
-package com.ect.leetCode.Tree;
+package com.ect.leetCode.tree;
 
 /**
  * Convert Sorted Array to Binary Search Tree

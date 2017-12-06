@@ -1,4 +1,4 @@
-package com.ect.leetCode.Tree;
+package com.ect.leetCode.tree;
 
 public class TreeNode {
 
