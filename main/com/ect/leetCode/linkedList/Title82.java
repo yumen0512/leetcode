@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Queue;
 
 /**
+ * 删除链表中的重复部分
  * Remove Duplicates from Sorted List II
  *
  * Given a sorted linked list, delete all nodes that have
@@ -64,4 +65,53 @@ public class Title82 {
 
 
     }
+
+    public ListNode deleteDuplicates2(ListNode head) {
+
+        ListNode preHead = new ListNode(-1);
+
+        ListNode pre = preHead;
+
+        preHead.next = head;
+
+        ListNode node = head;
+
+        while (node != null) {
+
+            while (node.next != null && node.val == node.next.val) {
+                node = node.next;
+            }
+
+            if (pre.next == node) {
+                pre = pre.next;
+            } else {
+                pre.next = node.next;
+            }
+
+            node = node.next;
+        }
+
+        return preHead.next;
+    }
+
+    /**
+     * 递归方式
+     */
+    public ListNode deleteDuplicates3(ListNode head) {
+
+        if (head == null) return null;
+
+        if (head.next != null && head.val == head.next.val) {
+            while (head.next != null && head.val == head.next.val) {
+                head = head.next;
+            }
+            return deleteDuplicates(head.next);
+        } else {
+            head.next = deleteDuplicates(head.next);
+        }
+        return head;
+
+    }
+
+
 }
