@@ -18,8 +18,11 @@ import java.util.List;
 public class Title17 {
 
 
-    public List<String> letterCombinations(String digits) {
+    public static  List<String> letterCombinations(String digits) {
         LinkedList<String> ans = new LinkedList<>();
+
+        if(digits==null || digits.length()==0) return ans;
+
         String[] mapping = new String[]{"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         ans.add("");
         for (int i = 0; i < digits.length(); i++) {
@@ -31,6 +34,13 @@ public class Title17 {
             }
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        String s = "123";
+
+        List<String> ans = letterCombinations(s);
+
     }
 
 
